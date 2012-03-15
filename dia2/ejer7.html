@@ -1,0 +1,102 @@
+<!-- /ejercicios 7: varias paginas con un menu para navegar entre ellas -->
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+</head> 
+<body> 
+
+<!-- Start of principal page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Principal</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>			
+	</div><!-- /content -->
+        
+	<ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="#page1">page1</a></li>
+            <li><a href="#page2">page2</a></li>
+            <li><a href="#page3">page3</a></li>
+        </ul>
+        
+        <div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of page1 -->
+<div data-role="page" id="page1">
+
+	<div data-role="header">
+		<h1>Page 1</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>			
+	</div><!-- /content -->
+        
+        <ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="#foo">back to principal</a></li>
+            <li><a href="#page2">page2</a></li>
+            <li><a href="#page3">page3</a></li>
+        </ul>
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of page2 -->
+<div data-role="page" id="page2">
+
+	<div data-role="header">
+		<h1>Page 2</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>			
+	</div><!-- /content -->
+        
+        <ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="#foo">back to principal</a></li>
+            <li><a href="#page1">page1</a></li>
+            <li><a href="#page3">page3</a></li>
+        </ul>
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of page3 -->
+<div data-role="page" id="page3">
+
+	<div data-role="header">
+		<h1>Page 3</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm first in the source order so I'm shown as the page.</p>			
+	</div><!-- /content -->
+        
+        <ul data-role="listview" data-inset="true" data-filter="false">
+            <li><a href="#foo">back to principal</a></li>
+            <li><a href="#page1">page1</a></li>
+            <li><a href="#page2">page2</a></li>
+        </ul>
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
