@@ -11,8 +11,6 @@
         
         <!-- jQuery -->
         <!-- include jquery toolkit here -->
-        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
         <!-- default javascript content -->
         <!-- include your default js file here -->
         <!-- data-main attribute tells require.js to load
