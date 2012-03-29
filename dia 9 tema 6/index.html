@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topic 6: MVC & Mixins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/backbone.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Topic 6: MVC & Mixins</h1>
+	</div><!-- /header -->
+        
+        <div data-role="content">	
+                <div id="create-list">
+                    <input id="new-title" placeholder="Title" size="30" type="text" />
+                    <input id="new-year" placeholder="Releaseyear" size="30" type="text" />
+                    <input id="new-synopsis" placeholder="Synopsis" size="30" type="text" />
+                    <span class="ui-tooltip-top">Press Enter to save this movie title</span>
+                </div>
+                <div id="div-list">
+                    <ul id="list"></ul>
+                </div>
+            </div>
+        <footer id="detailsMovies"></footer>
+        </div><!-- /content -->
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
