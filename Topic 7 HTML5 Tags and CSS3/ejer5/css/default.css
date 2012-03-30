@@ -1,0 +1,81 @@
+/*Add styling inside default.css to make contents more readable and usable.*/
+
+h2 { color: red; 
+     font-family: sans-serif; 
+}
+
+p { color: black;
+    font-size: 16px;
+    font-family: arial; 
+    font-style: oblique; 
+} 
+
+/*Make sure the menu items change when the mouse is over them.*/
+a:hover{
+    color: blue;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+/*Add lines between menu items; they must have the same width in all cases; 
+a line should appear at the left of “Home” and at the right of “Day 3”.*/
+#menu li{
+    display:inline;
+}
+
+#menu li a{
+    border-bottom: solid 5px black;
+    
+}
+#menu li:last-child {
+	border-right: 2px solid black;
+}
+
+#menu li:first-child {
+	border-left: 2px solid black;
+}
+
+
+/*Without using media queries, show both articles on the same row if enough space 
+and break them into different rows if they reach a minimum width.*/
+article{
+    width:700px; float:left; display:block;    
+
+
+}
+/*Highlight in different background colors all spans with classes: hiOne, hiTwo, hiThree.*/
+
+.hiOne{background: #ffb7b7;}
+.hiTwo{background: #a8d1ff;}
+.hiThree{background: #fff2a8;}
+/*Now highlight with another background color all spans which class name starts with: hi*/
+span[class^="hi"]{background: #ccc }
+/*Repeat previous step for class names ending with: One*/
+span[class$="One"]{background: #ffb7b7 }
+/*Remove all styles applied to spans with one new style, 
+without deleting your previous styles from the stylesheet.*/
+span[class]{background: blue}
+/*Apply different colors to first and second links in article’s header.*/
+article header a:nth-of-type(1) { background: chartreuse; }
+article header a:nth-of-type(2) { background: orange; }
+
+/*Remove empty p tags applying a new style.*/
+p:empty{display: none}
+/*Apply cross browser shadows to articles.*/
+article{
+    /*padding properties define the space between the element border and the element content.*/
+    padding: 2% 2% 2% 2%;
+    /*Used in casting shadows off block-level elements (like divs).*/
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+}
+/*Apply cross browser rotation to aside element.*/
+aside{
+    	-moz-transform: rotate(2deg); /* FF3.5+ */
+	-o-transform: rotate(2deg); /* Opera 10.5 */
+	-webkit-transform: rotate(2deg); /* Saf3.1+, Chrome */
+	-ms-transform: rotate(2deg); /* IE9 */
+	transform: rotate(2deg);
+}

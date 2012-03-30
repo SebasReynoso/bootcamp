@@ -1,0 +1,51 @@
+/* 
+    Document   : default
+    Created on : DATE
+    Author     : YOU <your@email>
+    Description:
+        CSS3 playground
+*/
+
+@media screen and (min-width: 1200px)
+{
+    p { 
+        -moz-column-count: 4;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 20px; 
+        }
+        
+    figure {
+            width: auto;
+            height : auto;
+        }
+
+}
+
+@media screen and (min-width: 800px)and (max-width: 1200px)
+{
+    p { 
+        -moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px; 
+        }
+        
+    figure {
+            width: 100px;
+            height : 100px;
+        }
+}
+
+@media screen and (max-width: 800px)
+{
+    p { 
+        -moz-column-count: 1;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 20px; 
+        }
+    figure { 
+            visibility:hidden;
+    }
+}
