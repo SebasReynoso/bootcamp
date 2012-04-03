@@ -1,0 +1,9 @@
+CACHE MANIFEST
+index.html
+css/default.css
+js/main.js
+js/worker.js
+js/websocket.js
+http://code.jquery.com/jquery-1.7.1.min.js
+http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js
+http://html5demos.com/h5utils.js
