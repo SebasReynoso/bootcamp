@@ -82,12 +82,11 @@ $(function(){
         
         editOnEnter: function(e){
             if (e.keyCode != 13) return; 
-            if (!$("#editMovie").val()) return;
+            if (!$("#editTitle").val()) return;
             var titleValue=$("#editTitle").val();
             var yearValue=$("#editYear").val();
             var SynopValue=$("#editSynopsis").val();
-            
-            this.model.set({ title: newValue });
+            this.model.set({ title: titleValue, ReleaseYear: yearValue, Synopsis: SynopValue});
         }
     });   
     
